@@ -1,10 +1,11 @@
-
 # Weather Station Monitoring System
 
 [![Java](https://img.shields.io/badge/Java-11+-orange.svg?style=for-the-badge&logo=java)](https://www.java.com)
 [![Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white)](https://kafka.apache.org/)
 [![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)](https://www.elastic.co/elasticsearch/)
 [![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)](https://www.elastic.co/kibana/)
+[![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
 
 A scalable, data-intensive application designed to handle high-frequency data streams from a network of IoT weather stations. This project, developed for the "Designing Data Intensive Applications" course (CSE-4E3), implements a full pipeline for data acquisition, processing, archiving, and analysis using modern stream-processing and storage technologies.
 
@@ -13,7 +14,6 @@ A scalable, data-intensive application designed to handle high-frequency data st
 ## System Architecture
 
 The system is designed with a three-stage, decoupled architecture to ensure scalability and fault tolerance.
-
 
 1.  **Data Acquisition**:
     * **10 Mock Weather Stations**: Each station is a containerized application that generates and sends weather status messages every second.
@@ -45,15 +45,15 @@ The system is designed with a three-stage, decoupled architecture to ensure scal
 
 ## Tech Stack
 
-| Category              | Technology                                                                                                                                                                                                                            |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Backend** | ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)                                                                                                                                          |
+| Category              | Technology                                                                                                                                                                                                                                                            |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Backend** | ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)                                                                                                                                                                       |
 | **Messaging** | ![Apache Kafka](https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white) ![ZooKeeper](https://img.shields.io/badge/ZooKeeper-F5A623?style=for-the-badge&logo=apache-zookeeper&logoColor=white) |
 | **Storage** | **Bitcask (Custom KV Store)**, **Apache Parquet** |
-| **Search & Analytics**| ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white) ![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)           |
+| **Search & Analytics**| ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white) ![Kibana](https://img.shields.io/badge/Kibana-005571?style=for-the-badge&logo=kibana&logoColor=white)            |
+| **Infrastructure** | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)                                             |
 | **Profiling** | **Java Flight Recorder (JFR)** |
 
 ---
-
 
 This project was developed as part of the CSE-4E3 course at the Faculty of Engineering, Alexandria University.
